@@ -7,13 +7,15 @@ import { AlumnoComponent } from './utl/alumno.componet';
 import { IdgsComponent } from './utl/idgs/idgs.component';
 import { IricComponent } from './utl/iric/iric.component';
 import { MenuComponent } from './utl/menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasBasModule } from './utl/formularios/operas-bas/operas-bas.module';
 import { DistanciaPuntosModule } from './distancia-puntos/distancia-puntos.module';
 import { CalificacionAlumComponent } from './utl/calificacion-alum/calificacion-alum.component';
 import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
+import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
+import { AppRoutingModule } from './app.routing.module';
 
 
 
@@ -29,6 +31,7 @@ import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
     SumaComponent,
     CalificacionAlumComponent,
     AlumnoFilterPipe,
+    AlumnoReactiveComponent,
 
   ],
   imports: [
@@ -36,7 +39,9 @@ import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
     FormsModule,
     BrowserAnimationsModule,
     OperasBasModule,
-    DistanciaPuntosModule
+    DistanciaPuntosModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
